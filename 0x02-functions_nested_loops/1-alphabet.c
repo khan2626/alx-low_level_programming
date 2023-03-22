@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print alphabet - print alpha in lower case
+ * print_alphabet - print alpha in lower case
  */
-void print alphabet(void)
+void print_alphabet(void)
 }
 	char la;
 
