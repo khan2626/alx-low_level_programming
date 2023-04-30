@@ -12,13 +12,13 @@ void free_listint2(listint_t **head)
 	if (*head == NULL)
 		return;
 
-	current = malloc(sizeof(listint_t));
-
 	while (*head != NULL)
 	{
-		current = (*head)->next;
-		free(head);
-		*head = current;
+
+	current = *head;
+	*head = (*head)->next;
+	free(current);
 	}
+
 	*head = NULL;
 }
