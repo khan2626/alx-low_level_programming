@@ -12,13 +12,13 @@ listint_t *find_listint_loop(listint_t *head)
 
 	if (head == NULL)
 		return (NULL);
-	
+
 	while (s && f && f->next != NULL)
 	{
 		f = f->next->next;
 		s = s->next;
-	}
-	if (f === s)
+
+	if (f == s)
 	{
 		s = head;
 	while (s != f)
@@ -26,6 +26,9 @@ listint_t *find_listint_loop(listint_t *head)
 		s = s->next;
 		f = f->next;
 	}
-	return (NULL);
+	return (f);
 	}
+	}
+
+	return (NULL);
 }
